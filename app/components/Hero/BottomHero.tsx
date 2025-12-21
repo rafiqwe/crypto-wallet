@@ -33,7 +33,10 @@ const BottomHero = ({
         </div>
 
         {/* Floating Images (separated from blur) */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] z-10 hidden md:block">
+        <div
+          ref={ImagesRef}
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] z-10 hidden md:block"
+        >
           {Images.map((imag, index) => {
             const positions = [
               "top-30 right-10",
@@ -46,7 +49,6 @@ const BottomHero = ({
 
             return (
               <div
-                ref={ImagesRef}
                 key={index}
                 className={`absolute w-60 h-60 ${positions[index] || "hidden"}`}
               >

@@ -4,7 +4,7 @@ const TopFooterText = () => {
   return (
     <div className="w-full h-full relative text-white px-10">
       <div className="w-full h-full flex items-center flex-col mx-auto justify-center">
-        <h3 className="text-5xl w-1/2 font-semibold text-center">
+        <h3 className="md:text-5xl text-4xl md:w-1/2 w-full font-semibold text-center">
           Experience Bitcoin like never before with Wallet
         </h3>
         <div className="flex items-center  ">

@@ -1,11 +1,13 @@
 "use client";
 import { Instagram, Linkedin, LucideTwitter, Twitter } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 
 const ActualFooter = () => {
   const [isSubscribed, setIsSubscribed] = React.useState(false);
   const [email, setEmail] = React.useState("");
+  const router = useRouter();
   const navItems = [
     {
       name: "Home",
@@ -13,7 +15,7 @@ const ActualFooter = () => {
     },
     {
       name: "Guides",
-      href: "/guides",
+      href: "/guide",
     },
     {
       name: "Support",
@@ -48,7 +50,7 @@ const ActualFooter = () => {
     localStorage.setItem("SubscribedEmail", email as string);
     setEmail("");
     setIsSubscribed(true);
-    console.log(formData.get("email"));
+    router.push("/thank-you");
   };
 
   useEffect(() => {
@@ -91,7 +93,7 @@ const ActualFooter = () => {
                     name="email"
                     type="email"
                     value={email}
-                    required
+                    required={true}
                     placeholder="name@gmail.com"
                     className="md:px-5 px-3 md:py-2 outline-none w-48 md:w-full  text-lg font-semibold font-sans "
                     onChange={(e) => setEmail(e.target.value)}

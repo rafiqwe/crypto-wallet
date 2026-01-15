@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const TopExplore = () => {
@@ -15,9 +16,13 @@ const TopExplore = () => {
             From advanced tools to seamless navigation, we’ve designed
             everything to elevate your Bitcoin experience.
           </p>
-          <button className="px-7 py-3 rounded-2xl bg-orange-500 text-white font-bold shadow-[0px_2px_8px_0px_rgba(99,99,99,0.2)] cursor-pointer">
+          <Link
+            target="_blank"
+            href={"https://chromewebstore.google.com/"}
+            className="px-7 py-3 rounded-2xl bg-orange-500 text-white font-bold shadow-[0px_2px_8px_0px_rgba(99,99,99,0.2)] cursor-pointer"
+          >
             Download Now
-          </button>
+          </Link>
         </div>
       </div>
     </div>

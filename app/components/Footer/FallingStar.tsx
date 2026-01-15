@@ -1,25 +1,35 @@
 "use client";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useMemo, useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const STAR_COUNT = 10;
 
 const FallingStar = () => {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const stars = useMemo(
-    () =>
-      Array.from({ length: STAR_COUNT }).map(() => ({
-        left: Math.random() * 100,
-        delay: Math.random() * 5,
-        duration: gsap.utils.random(1.2, 2.2),
-        angle: gsap.utils.random(115, 130),
-        distance: gsap.utils.random(600, 900),
-        color: Math.random() > 0.5 ? "from-white" : "from-gray-400",
-      })),
-    []
-  );
+  const [stars, setStars] = useState<
+    {
+      left: number;
+      delay: number;
+      duration: number;
+      angle: number;
+      distance: number;
+      color: string;
+    }[]
+  >([]);
+
+  useEffect(() => {
+    const generatedStars = Array.from({ length: STAR_COUNT }).map(() => ({
+      left: Math.random() * 100,
+      delay: Math.random() * 5,
+      duration: gsap.utils.random(1.2, 2.2),
+      angle: gsap.utils.random(115, 130),
+      distance: gsap.utils.random(600, 900),
+      color: Math.random() > 0.5 ? "from-white" : "from-gray-400",
+    }));
+    setStars(generatedStars);
+  }, []);
 
   useGSAP(
     () => {
@@ -58,7 +68,7 @@ const FallingStar = () => {
         gsap.delayedCall(stars[i].delay, animate);
       });
     },
-    { scope: containerRef }
+    { scope: containerRef, dependencies: [stars] }
   );
 
   return (
@@ -77,7 +87,7 @@ const FallingStar = () => {
           }}
         >
           <span
-            className={`block w-[1.5px] z-20 h-40 bg-gradient-to-b ${star.color} to-transparent blur-[0.3px]`}
+            className={`block w-[1.5px] z-20 h-40 bg-linear-to-b ${star.color} to-transparent blur-[0.3px]`}
           />
         </div>
       ))}

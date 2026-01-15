@@ -7,7 +7,7 @@ import ActualFooter from "./ActualFooter";
 
 const Footer = () => {
   return (
-    <div className="px-2 relative w-full h-full  ">
+    <div className="px-2  mt-10 relative w-full h-full  ">
       <div className="overflow-hidden relative w-full h-full bg-black rounded-4xl">
         <div className="w-full ">
           <div className="w-full mx-auto overflow-hidden flex relative items-center justify-center">

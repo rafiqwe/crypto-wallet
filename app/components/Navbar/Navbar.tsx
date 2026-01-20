@@ -18,7 +18,7 @@ const Navbar = () => {
   const menuItems = [
     { title: "Guide", href: "/guide" },
     { title: "Support", href: "/support" },
-    { title: "Remix for free", href: "/remix-for-free" },
+    { title: "Remix for free", href: "https://remix.run" },
   ];
 
   useGSAP(
@@ -57,7 +57,7 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
+    <nav className="fixed w-full top-6 left-0 right-0 z-30 flex justify-center px-4">
       <div
         ref={containerRef}
         className="relative w-full max-w-5xl overflow-hidden rounded-3xl border border-white/10 bg-black/80 backdrop-blur-xl transition-all duration-300"
@@ -83,7 +83,7 @@ const Navbar = () => {
 
           {/* Desktop Action / Mobile Toggle */}
           <div className="flex items-center gap-4">
-            <button className="hidden rounded-full bg-white px-5 py-2 text-sm font-semibold text-black transition-transform hover:scale-105 active:scale-95 md:block">
+            <button className="hidden rounded-full bg-white px-5 py-2 text-sm font-semibold text-black transition-transform  cursor-pointer hover:scale-105 active:scale-95 md:block">
               Connect Wallet
             </button>
 

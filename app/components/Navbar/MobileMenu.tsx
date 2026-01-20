@@ -24,7 +24,7 @@ const MobileMenu = ({
           </li>
         ))}
         <li className="mobile-nav-item pt-4 w-full">
-          <button className="w-full rounded-2xl bg-white py-3 text-center text-sm font-bold text-black transition-transform active:scale-95">
+          <button className="w-full cursor-pointer rounded-2xl bg-white py-3 text-center text-sm font-bold text-black transition-transform active:scale-95">
             Connect Wallet
           </button>
         </li>

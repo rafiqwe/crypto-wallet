@@ -17,7 +17,6 @@ This project highlights:
 - Component-driven architecture
 - Responsive layout strategies
 - Clean state management patterns
-- Web3-ready UI structure
 
 ---
 
@@ -47,5 +46,10 @@ This project highlights:
 
 ## 📸 Screenshots
 
-"https://res.cloudinary.com/dlfjsnbs1/image/upload/v1770565003/screenshot_1.5x_postspark_2026-02-08_21-36-19_mlj39f.webp"
+![guide page ](https://res.cloudinary.com/dlfjsnbs1/image/upload/v1770564791/screenshot_1.5x_postspark_2026-02-08_21-29-23_kmxrjr.webp)
+![guide page ](https://res.cloudinary.com/dlfjsnbs1/image/upload/v1770565003/screenshot_1.5x_postspark_2026-02-08_21-36-19_mlj39f.webp)
+![guide page ](https://res.cloudinary.com/dlfjsnbs1/image/upload/v1770564791/screenshot_1.5x_postspark_2026-02-08_21-28-30_vawimm.webp)
+
+
+
 

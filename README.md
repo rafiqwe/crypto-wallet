@@ -1,7 +1,7 @@
 # 💼 Crypto Wallet Frontend
 
 A modern crypto wallet interface built with **Next.js** focused on clean UI/UX, responsiveness, and scalable architecture.  
-This project demonstrates how a production-ready Web3 wallet dashboard can be designed and structured from the frontend perspective.
+This project demonstrates how a production-ready landing page can be designed and structured from the frontend perspective.
 
 > ⚠️ This project is frontend-only and does not perform real blockchain transactions.  
 > It is intended for UI/UX demonstration, architecture exploration, and portfolio showcasing.
@@ -10,7 +10,7 @@ This project demonstrates how a production-ready Web3 wallet dashboard can be de
 
 ## ✨ Overview
 
-The Crypto Wallet Frontend showcases a professional wallet dashboard experience including account visualization, transaction layouts, and interactive components. It is designed to simulate real-world crypto applications while maintaining performance, accessibility, and scalability standards.
+The Crypto Wallet Frontend showcases a professional wallet landing page experience with interactive components. It is designed to simulate real-world crypto applications while maintaining performance, accessibility, and scalability standards.
 
 This project highlights:
 
